@@ -1,0 +1,46 @@
+.our-clients {
+  background-color: var(--txt-main-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.our-clients-title {
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.client-box {
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--social-link-color);
+  transition-property: border-color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--brand-color);
+    border-radius: 4px;
+  }
+}
+
+.client-box-icon {
+  transition-property: fill;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .client-box:hover &,
+  .client-box:focus & {
+    fill: var(--brand-color);
+  }
+}
